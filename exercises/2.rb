@@ -13,17 +13,17 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
-# HINTS
-# Get a random number between 1 and 6 by doing:
-# rand(1..6)
-# Log output to the screen with puts, e.g.
-# puts "Hello"
-# You can add two strings together, or two numbers, but
-# not a string and a number; e.g. this will cause an error:
-# "i would like " + 5 + " tacos"
-# To rectify this, you can convert the number into a string,
-# using .to_s:
-# "i would like " + 5.to_s + " tacos"
-# We can specify multiple conditions with || (OR) and && (AND)
-# if dinner == "tacos" || dinner == "pizza"
+d1 = rand(1..6)
+d2 = rand(1..6)
+total = d1 + d2
 
+puts "d1 = #{d1}"
+puts "d2 = #{d2}"
+puts "total = #{total}"
+
+if total == 7 || total == 11
+    puts "You Win!"
+elsif total == 2 || total == 3 || total == 12
+    puts "You Lose!"
+else puts "The point is #{total}"
+end

@@ -21,3 +21,8 @@
 # To rectify this, you can convert the number into a string
 # "i would like #{5} tacos"
 
+player1 = rand(1..6)
+player2 = rand(1..6)
+puts "Player 1 score: #{player1}"
+puts "Player 2 score: #{player2}"
+puts "Total score: #{player1 + player2}"
